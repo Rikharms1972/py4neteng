@@ -1,0 +1,15 @@
+{
+    "uptime": 1500,
+    "vendor": "Cisco",
+    "os_version": "IOSv Software (VIOS-ADVENTERPRISEK9-M), Version 15.6(2)T, RELEASE SOFTWARE (fc2)",
+    "serial_number": "9J7M4D5W9DVULAKCCNWW7",
+    "model": "IOSv",
+    "hostname": "R1",
+    "fqdn": "R1.snt.example",
+    "interface_list": [
+        "GigabitEthernet0/0",
+        "GigabitEthernet0/1",
+        "GigabitEthernet0/2",
+        "GigabitEthernet0/3"
+    ]
+}

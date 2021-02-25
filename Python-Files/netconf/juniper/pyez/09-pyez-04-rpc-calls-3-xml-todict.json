@@ -1,0 +1,40 @@
+{
+    "interface-information": {
+        "@style": "normal",
+        "logical-interface": {
+            "name": "fxp0.0",
+            "local-index": "4",
+            "snmp-index": "13",
+            "if-config-flags": {
+                "iff-up": null,
+                "iff-snmp-traps": null,
+                "internal-flags": "0x4000000"
+            },
+            "encapsulation": "ENET2",
+            "traffic-statistics": {
+                "@style": "brief",
+                "input-packets": "78631",
+                "output-packets": "35676"
+            },
+            "filter-information": null,
+            "address-family": {
+                "address-family-name": "inet",
+                "mtu": "1500",
+                "address-family-flags": {
+                    "ifff-is-primary": null,
+                    "ifff-sendbcast-pkt-to-re": null
+                },
+                "interface-address": {
+                    "ifa-flags": {
+                        "ifaf-current-default": null,
+                        "ifaf-current-preferred": null,
+                        "ifaf-current-primary": null
+                    },
+                    "ifa-destination": "10/8",
+                    "ifa-local": "10.4.4.41",
+                    "ifa-broadcast": "10.255.255.255"
+                }
+            }
+        }
+    }
+}

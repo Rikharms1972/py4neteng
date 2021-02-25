@@ -1,0 +1,15 @@
+<configuration changed-seconds="1613844702" changed-localtime="2021-02-20 18:11:42 UTC">
+  <system>
+    <login>
+      <user>
+        <name>sntuser</name>
+        <full-name>sntuser</full-name>
+        <uid>2001</uid>
+        <class>super-user</class>
+        <authentication>
+          <encrypted-password>$5$kHO9aEHU$yV0PJzFiOFY2hvOEwj.lUbfQyAzjOGxd48bLPmTgStB</encrypted-password>
+        </authentication>
+      </user>
+    </login>
+  </system>
+</configuration>

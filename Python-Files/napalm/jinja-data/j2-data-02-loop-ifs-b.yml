@@ -1,0 +1,34 @@
+#  YAML file to for rendering/merging with Jinja template
+R1:
+   hostname: R1
+   region: uk
+   interfaces:
+      loopbacks:
+         - 180:
+            ipv4_addr: 1.1.1.180
+            ipv4_mask: 255.255.255.255
+         - 181:
+            ipv4_addr: 1.1.1.181
+            ipv4_mask: 255.255.255.255
+R2:
+   hostname: R2
+   region: us
+   interfaces:
+      loopbacks:
+         - 180:
+            ipv4_addr: 2.2.2.180
+            ipv4_mask: 255.255.255.255
+         - 181:
+            ipv4_addr: 2.2.2.181
+            ipv4_mask: 255.255.255.255
+R3:
+   hostname: R3
+   region: eu
+   interfaces:
+      loopbacks:
+         - 180:
+            ipv4_addr: 3.3.3.180
+            ipv4_mask: 255.255.255.255
+         - 181:
+            ipv4_addr: 3.3.3.181
+            ipv4_mask: 255.255.255.255

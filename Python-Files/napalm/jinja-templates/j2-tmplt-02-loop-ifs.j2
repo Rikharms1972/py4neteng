@@ -1,0 +1,14 @@
+hostname {{hostname}}
+{% for loopback in interfaces.loopbacks %}
+interface Loopback{{loopback.number}}
+  description ***TEMPLATE LOOPBACK {{loopback.number}}****
+  ipv4 address {{loopback.ipv4_addr}} {{loopback.ipv4_mask}}
+{% endfor %}
+{% if region == 'uk' %}
+ntp server uk.pool.ntp
+{% elif region == 'us' %}
+ntp server us.pool.ntp
+{% else %}
+ntp server pool.ntp
+{% endif %}
+end

@@ -1,0 +1,7 @@
+hostname {{hostname}}
+interface Loopback150
+ description ***TEMPLATE LOOPBACK 100****
+ ipv4 address {{interfaces.Loopback150.ipv4_addr}} {{interfaces['Loopback150'].ipv4_mask}}
+interface Loopback151
+ description ***TEMPLATE LOOPBACK 200****
+ ipv4 address {{interfaces.Loopback151.ipv4_addr}} {{interfaces.Loopback151['ipv4_mask']}}

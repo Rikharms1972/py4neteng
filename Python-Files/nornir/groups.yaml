@@ -1,0 +1,17 @@
+# Nornir groups file
+---
+cisco_rtrs:
+  port: 22
+  username: sntuser
+  password: Ilovenetworks99
+  platform: cisco_ios
+  data:
+    priority: 2
+    site: paris
+
+junos_rtrs:
+  port: 22
+  username: sntuser
+  password: Ilovenetworks99
+  platform: juniper_junos
+

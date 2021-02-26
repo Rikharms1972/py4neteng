@@ -1,0 +1,48 @@
+# Nornir hosts file
+---
+R1:
+    # the following are expected and used
+    # by nornir to access the device
+    hostname: 10.99.99.11
+    port: 22
+    username: sntuser
+    password: Ilovenetworks99
+    platform: cisco_ios
+    # for the enable password
+    connection_options:
+      netmiko:
+        extras:
+          secret: cisco
+    # the data section is where you can add
+    # your own stuff
+    data:
+      priority: 1
+      site: london
+      loopbacks:
+        0: 10.1.1.1
+        1: 10.1.1.2
+R2:
+    hostname: 10.99.99.12
+    groups:
+      - cisco_rtrs
+    data:
+      site: paris
+      loopbacks:
+        0: 10.2.2.1
+        1: 10.2.2.2
+R3:
+    hostname: 10.99.99.13
+    groups:
+      - cisco_rtrs
+    data:
+      loopbacks:
+        0: 10.3.3.1
+        1: 10.3.3.2
+R4:
+    hostname: 10.4.4.41
+    groups:
+      - junos_rtrs
+    data:
+      loopbacks:
+        0: 10.4.4.1
+        1: 10.4.4.2

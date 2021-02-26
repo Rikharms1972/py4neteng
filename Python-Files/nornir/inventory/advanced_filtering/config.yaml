@@ -1,0 +1,14 @@
+## Nornir 3.0 Config File 
+
+inventory:
+    plugin: SimpleInventory
+    options: 
+        host_file: "inventory/advanced_filtering/hosts.yaml"
+        group_file: "inventory/advanced_filtering/groups.yaml"
+        defaults_file: "inventory/advanced_filtering/defaults.yaml"
+
+runner: 
+    plugin: threaded
+    options: 
+        # max number of devices connections
+        num_workers: 20

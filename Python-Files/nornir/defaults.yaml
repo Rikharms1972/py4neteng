@@ -1,0 +1,16 @@
+## Nornir Defaults File 
+---
+# 3 things needed to access device.
+platform: cisco-ios
+username: sntuser
+password: Ilovenetworks99
+# this is needed for the enable password
+connection_options:
+  netmiko:
+    extras:
+      secret: cisco
+# the data section is where you can add
+# your own stuff
+data:
+  priority: 99
+  site: york
